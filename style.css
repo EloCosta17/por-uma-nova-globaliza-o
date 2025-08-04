@@ -65,10 +65,12 @@ body {
 
 /* Main card */
 .main-card {
+  display: flex;
   background: #19192a;
   padding: 30px 0 20px 0;
-  text-align: center;
-  position: relative;
+  margin-top: 20px;
+  text-align: justify;
+  margin: 0 20px;
 }
 
 .main-img {
@@ -81,7 +83,7 @@ body {
   font-weight: bold;
   max-width: 270px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.02em;
 }
 
@@ -93,6 +95,12 @@ body {
   padding: 20px 18px;
   margin: 24px 16px;
   box-shadow: 0 2px 8px rgba(30, 30, 30, 0.04);
+
+  img {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .card-aqua h2,
@@ -158,7 +166,9 @@ body {
   font-size: 0.85rem;
   color: #eee;
   margin-top: 1rem;
-  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
 }
 
 .videos-relacionados {
