@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   background: #19192a;
   color: #fff;
   min-width: 280px;
@@ -92,10 +92,11 @@ body {
   border-radius: 18px;
   padding: 20px 18px;
   margin: 24px 16px;
-  box-shadow: 0 2px 8px rgba(30,30,30,0.04);
+  box-shadow: 0 2px 8px rgba(30, 30, 30, 0.04);
 }
 
-.card-aqua h2, .card-aqua h3 {
+.card-aqua h2,
+.card-aqua h3 {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 8px;
@@ -118,36 +119,46 @@ body {
   letter-spacing: 0.02em;
 }
 
-.causas {
+.causas-scroll {
   display: flex;
-  justify-content: space-around;
-  margin: 18px 0 10px 0;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
 .causa {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 70%;
+  max-width: 200px;
+  background-color: #1a1a2e;
+  padding: 0.5rem;
+  border-radius: 10px;
   text-align: center;
-  width: 42%;
 }
 
 .causa img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 6px;
-  border: 3px solid #9cf3ed;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
-.causa h3 {
-  font-size: 0.95em;
+.causa p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  margin-top: 5px;
+  color: #fff;
 }
 
-.causas-texto {
-  margin: 0 18px 18px 18px;
-  font-size: 1em;
-  color: #e0e0e0;
+.descricao {
+  font-size: 0.85rem;
+  color: #eee;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .videos-relacionados {
@@ -159,7 +170,7 @@ body {
   background: #3f4b5a;
   border-radius: 18px;
   padding: 8px;
-  box-shadow: 0 2px 8px rgba(30,30,30,0.06);
+  box-shadow: 0 2px 8px rgba(30, 30, 30, 0.06);
 }
 
 .video img {
