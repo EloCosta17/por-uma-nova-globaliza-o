@@ -66,6 +66,8 @@ body {
 /* Main card */
 .main-card {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: #19192a;
   padding: 30px 0 20px 0;
   margin-top: 20px;
@@ -79,7 +81,7 @@ body {
 }
 
 .main-card h1 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
   max-width: 270px;
   margin: 0 auto;
@@ -233,7 +235,7 @@ body {
     width: 90px;
   }
   .causa img {
-    width: 60px;
-    height: 60px;
+    width: 125px;
+    height: 125px;
   }
 }
