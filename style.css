@@ -1,0 +1,218 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #19192a;
+  color: #fff;
+  min-width: 280px;
+}
+
+/* Header */
+.header {
+  background: #9cf3ed;
+  padding: 18px 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #19192a;
+  gap: 6px;
+
+  span {
+    font-size: 32px;
+  }
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+.header nav {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #19192a;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.header nav ul li a:hover {
+  color: #17bfae;
+}
+
+/* Main card */
+.main-card {
+  background: #19192a;
+  padding: 30px 0 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.main-img {
+  width: 140px;
+  margin-bottom: 12px;
+}
+
+.main-card h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  max-width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Cards */
+.card-aqua {
+  background: #9cf3ed;
+  color: #19192a;
+  border-radius: 18px;
+  padding: 20px 18px;
+  margin: 24px 16px;
+  box-shadow: 0 2px 8px rgba(30,30,30,0.04);
+}
+
+.card-aqua h2, .card-aqua h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+.card-aqua p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.section-title {
+  text-align: center;
+  margin: 26px 0 12px 0;
+}
+
+.section-title h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.causas {
+  display: flex;
+  justify-content: space-around;
+  margin: 18px 0 10px 0;
+}
+
+.causa {
+  text-align: center;
+  width: 42%;
+}
+
+.causa img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 6px;
+  border: 3px solid #9cf3ed;
+}
+
+.causa h3 {
+  font-size: 0.95em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.causas-texto {
+  margin: 0 18px 18px 18px;
+  font-size: 1em;
+  color: #e0e0e0;
+}
+
+.videos-relacionados {
+  margin: 0 16px 0 16px;
+}
+
+.video {
+  margin-bottom: 14px;
+  background: #3f4b5a;
+  border-radius: 18px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(30,30,30,0.06);
+}
+
+.video img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 4px;
+}
+
+.video-link {
+  display: block;
+  font-size: 0.88em;
+  color: #9cf3ed;
+  word-break: break-all;
+  text-align: left;
+  margin: 4px 0 0 0;
+}
+
+.cards-mudanca {
+  margin: 0 0 16px 0;
+}
+
+.cards-mudanca .card-aqua {
+  margin-bottom: 12px;
+}
+
+.milton-bio {
+  margin: 0 18px 30px 18px;
+  font-size: 1em;
+  color: #e0e0e0;
+}
+
+/* Scrollbar custom for mobile */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #17bfae #19192a;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #19192a;
+}
+::-webkit-scrollbar-thumb {
+  background: #17bfae;
+  border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .main-img {
+    width: 90px;
+  }
+  .causa img {
+    width: 60px;
+    height: 60px;
+  }
+}
